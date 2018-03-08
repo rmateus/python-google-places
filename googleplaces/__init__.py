@@ -900,7 +900,7 @@ class Place(object):
     def types(self):
         """Returns a list of feature types describing the given result."""
         if self._types == '' and self.details != None and 'types' in self.details:
-            self._icon = self.details['types']
+            self._types = self.details['types']
         return self._types
 
     @property
